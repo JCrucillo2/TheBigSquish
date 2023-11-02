@@ -1,0 +1,46 @@
+@use "../../sassStyles/colors" as *;
+@use "../../sassStyles/media-queries" as *;
+
+.site-footer {
+  background-color: $yellow-color;
+  color: $heading-color;
+
+  .footer-control {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+  }
+}
+
+.main-footer {
+  @include tablet {
+    display: flex;
+    gap: 2rem;
+  }
+
+  div {
+    ul {
+      li {
+        a {
+          color: white;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-break {
+  background: $heading-color;
+  border: none;
+  height: 0.0625rem;
+}
+
+.copyright {
+  p {
+    margin-top: 1.5rem;
+  }
+}

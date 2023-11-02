@@ -1,0 +1,52 @@
+@use "colors" as *;
+
+$heading-font-family: "Abril Fatface", cursive;
+$body-font-family: "Rubik", sans-serif;
+
+body {
+  font-family: $body-font-family;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: $body-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-weight: 800;
+  color: $heading-color;
+}
+
+h1 {
+  font-size: clamp(2.113rem, 1.8782rem + 1.1738vw, 3.052rem);
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: clamp(1.699rem, 1.5135rem + 0.9275vw, 2.441rem);
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: clamp(1.35rem, 1.1993rem + 0.7538vw, 1.953rem);
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: clamp(1.253rem, 1.1755rem + 0.3875vw, 1.563rem);
+  line-height: 1.3;
+}
+
+h5 {
+  font-size: clamp(1.063rem, 1.0162rem + 0.2338vw, 1.25rem);
+  line-height: 1.3;
+}
+
+h6 {
+  font-size: clamp(1.063rem, 1.0162rem + 0.2338vw, 1.25rem);
+  line-height: 1.3;
+}
