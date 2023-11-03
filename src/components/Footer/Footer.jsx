@@ -1,5 +1,7 @@
 import "./Footer.scss";
 
+import { Link } from "react-router-dom";
+
 const Footer = () => {
 	return (
 		<>
@@ -10,13 +12,13 @@ const Footer = () => {
 							<h3>Company</h3>
 							<ul>
 								<li>
-									<a href="#">Home</a>
+									<Link to="/">Home</Link>
 								</li>
 								<li>
-									<a href="#">About</a>
+									<Link to="about">About</Link>
 								</li>
 								<li>
-									<a href="#">Locations</a>
+									<Link to="locations">Locations</Link>
 								</li>
 							</ul>
 						</div>

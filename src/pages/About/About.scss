@@ -1,0 +1,83 @@
+@use "../../sassStyles/media-queries" as *;
+@use "../../sassStyles/colors" as *;
+
+.about-wrapper {
+  margin: 3rem auto;
+
+  .about-title {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .about-content {
+    .first-entry {
+      background: $heading-color;
+      color: $yellow-color;
+      padding: 3rem 1rem;
+
+      .first-entry-wrapper {
+        max-width: 75rem;
+        margin: 0 auto;
+
+        @include tablet {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+          gap: 1rem;
+        }
+
+        .first-entry-image {
+          display: grid;
+          place-content: center;
+          img {
+            margin-bottom: 1rem;
+            max-width: 21.875rem;
+            width: 100%;
+            border-radius: 100%;
+          }
+        }
+
+        .first-entry-content {
+          p {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+
+    .about-family {
+      max-width: 75rem;
+      margin: 3rem auto;
+      padding: 0 1rem;
+
+      h3 {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .about-family-grid {
+        display: grid;
+        justify-content: center;
+
+        @include tablet {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1rem;
+        }
+
+        div {
+          img {
+            // width: 20rem;
+            height: 100%;
+            margin-bottom: 2rem;
+            object-fit: fill;
+            box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.4);
+
+            @include tablet {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

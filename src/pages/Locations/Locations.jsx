@@ -4,7 +4,7 @@ const Locations = () => {
 	return (
 		<div className="locations-wrapper">
 			<div className="locations-header">
-				<h2>Locations</h2>
+				<h2 className="locations-title">Locations</h2>
 				<p>Here are some of our current locations and store hours.</p>
 			</div>
 

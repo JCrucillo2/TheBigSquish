@@ -1,16 +1,21 @@
+@use "../../sassStyles/media-queries" as *;
+
 .locations-wrapper {
   max-width: 75rem;
   margin: 3rem auto;
   text-align: center;
+  padding: 0 1rem;
 
   .locations-header {
     margin-bottom: 3rem;
   }
 
   .locations-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
 
     div {
       h3 {
