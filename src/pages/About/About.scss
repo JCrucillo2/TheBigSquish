@@ -11,7 +11,7 @@
 
   .about-content {
     .first-entry {
-      background: $heading-color;
+      background: $primary-color;
       color: $yellow-color;
       padding: 3rem 1rem;
 
@@ -65,16 +65,17 @@
         }
 
         div {
+          margin-bottom: 1rem;
+
+          @include tablet {
+            margin-bottom: 0;
+          }
+
           img {
             // width: 20rem;
             height: 100%;
-            margin-bottom: 2rem;
             object-fit: fill;
             box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.4);
-
-            @include tablet {
-              margin-bottom: 0;
-            }
           }
         }
       }

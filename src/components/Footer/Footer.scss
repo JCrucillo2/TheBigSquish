@@ -3,7 +3,7 @@
 
 .site-footer {
   background-color: $yellow-color;
-  color: $heading-color;
+  color: $primary-color;
 
   .footer-control {
     max-width: 75rem;
@@ -22,7 +22,7 @@
     ul {
       li {
         a {
-          color: white;
+          color: $dark-color;
 
           &:hover {
             text-decoration: underline;
@@ -34,7 +34,7 @@
 }
 
 .footer-break {
-  background: $heading-color;
+  background: $primary-color;
   border: none;
   height: 0.0625rem;
 }
