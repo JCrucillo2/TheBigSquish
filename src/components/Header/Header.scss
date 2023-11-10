@@ -28,6 +28,7 @@
   .logo-title {
     display: none;
     color: $yellow-color;
+    font-size: 2rem;
 
     @include tablet {
       display: block;
@@ -80,6 +81,7 @@
     background: transparent;
     color: $yellow-color;
     height: auto;
+    width: auto;
 
     ul {
       display: flex;
