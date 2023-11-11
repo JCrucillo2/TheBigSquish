@@ -3,7 +3,7 @@
 @use "@/sassStyles/mixins" as *;
 
 .franchise-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("@/assets/franchise-banner.webp");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("@/assets/franchise-banner.webp");
   background-repeat: no-repeat;
   background-position: center right;
 
@@ -27,7 +27,7 @@
 
 .franchise-btn {
   .btn {
-    color: $yellow-color;
+    color: $light-color;
     text-decoration: none;
     padding: 0.625rem 0.9375rem;
     border-radius: 0.1875rem;

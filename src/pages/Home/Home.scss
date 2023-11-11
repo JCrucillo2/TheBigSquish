@@ -1,0 +1,22 @@
+@use "@/sassStyles/media-queries" as *;
+@use "@/sassStyles/colors" as *;
+@use "@/sassStyles/mixins" as *;
+
+.home-wrapper {
+  margin: 3rem 0 auto;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .placeholder {
+    max-width: 75rem;
+    margin: 3rem auto;
+    padding: 0 1rem;
+
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+}

@@ -29,25 +29,29 @@ const Contact = () => {
 				<form ref={form} onSubmit={sendEmail} className="contact-form">
 					<div>
 						<label htmlFor="user_name">Name:</label>
-						<input type="text" name="user_name" required />
+						<input type="text" name="user_name" placeholder="Name" required />
 					</div>
 
 					<div>
 						<label htmlFor="user_email">Email:</label>
-						<input type="email" name="user_email" required />
+						<input type="email" name="user_email" placeholder="Email" required />
 					</div>
 
 					<div>
 						<label htmlFor="user_phone">Phone Number:</label>
-						<input type="tel" name="user_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+						<input type="tel" name="user_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7891" required />
 					</div>
 
 					<div>
 						<label htmlFor="message">Message:</label>
-						<textarea name="message" />
+						<textarea name="message" placeholder="Your message here!" required />
 					</div>
 					<input className="btn btn-bright" type="submit" value="Send" />
 				</form>
+
+				<div className="contact-item-prev">
+					<img src={ItemsImage} alt="product item samples" />
+				</div>
 			</div>
 		</div>
 	);

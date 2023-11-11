@@ -17,6 +17,10 @@
   max-width: 31.25rem;
   margin: 0 auto;
 
+  @include tablet {
+    width: 100%;
+  }
+
   label {
     display: block;
     font-weight: bold;
@@ -44,8 +48,30 @@
   }
 }
 
+.form-wrapper {
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+  .contact-item-prev {
+    display: none;
+
+    img {
+      width: 18.75rem;
+    }
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
 .btn {
-  color: $yellow-color;
+  color: $light-color;
   text-decoration: none;
   padding: 0.625rem 0.9375rem;
   border-radius: 0.1875rem;
