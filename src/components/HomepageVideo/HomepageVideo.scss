@@ -1,0 +1,37 @@
+@use "@/sassStyles/colors" as *;
+
+.home-container {
+  position: relative;
+
+  .home-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  video {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: 0 40%;
+    margin: 0;
+  }
+
+  .home-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: grid;
+    place-content: center;
+    padding: 1rem;
+
+    h2 {
+      color: $light-color;
+      font-size: clamp(1.6875rem, 1.1648rem + 2.6136vw, 3.125rem);
+    }
+  }
+}
