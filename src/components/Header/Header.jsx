@@ -23,6 +23,9 @@ const Header = () => {
 						<Link to="about">About</Link>
 					</li>
 					<li>
+						<Link to="promotions">Promotions</Link>
+					</li>
+					<li>
 						<Link to="locations">Locations</Link>
 					</li>
 					<li>
